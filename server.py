@@ -3,7 +3,7 @@ NetBox MCP Server — DCIM, IPAM, Circuits
 
 Provides read/write access to all /api/dcim/, /api/ipam/, and /api/circuits/ endpoints.
 Configure via environment variables:
-  NETBOX_URL   - Base URL (default: https://10.99.30.152)
+  NETBOX_URL   - Base URL for your NetBox instance (required)
   NETBOX_TOKEN - API token for authentication
 """
 
@@ -21,7 +21,7 @@ try:
 except ImportError:
     pass
 
-NETBOX_URL = os.environ.get("NETBOX_URL", "https://10.99.30.152").rstrip("/")
+NETBOX_URL = os.environ.get("NETBOX_URL", "").rstrip("/")
 NETBOX_TOKEN = os.environ.get("NETBOX_TOKEN", "")
 
 mcp = FastMCP("NetBox DCIM + IPAM + Circuits")
