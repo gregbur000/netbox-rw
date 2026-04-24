@@ -1,0 +1,32 @@
+# Virtual environment (created by python3 -m venv .)
+bin/
+include/
+lib/
+lib64
+pyvenv.cfg
+share/
+
+# Credentials and secrets
+.env
+*.env
+.env.*
+!.env.example
+*_token*
+*_secret*
+secrets.json
+credentials.json
+claude_desktop_config.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Editor
+.DS_Store
+*.swp
+*.swo
+.idea/
+.vscode/
