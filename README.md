@@ -13,8 +13,8 @@ A read/write [Model Context Protocol](https://modelcontextprotocol.io) server fo
 ### 1. Clone the repository
 
 ```bash
-mkdir /path/to/desired/MCP/directory
-cd /path/to/desired/MCP/directory
+mkdir /path/to/netbox-rw
+cd /path/to/netbox-rw
 git clone https://github.com/gregbur000/netbox-rw.git
 ```
 
