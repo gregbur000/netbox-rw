@@ -10,11 +10,19 @@ A read/write [Model Context Protocol](https://modelcontextprotocol.io) server fo
 
 ## Setup
 
-### 1. Create a virtual environment and install dependencies
+### 1. Clone the repository
 
 ```bash
-cd /path/to/netbox-rw
+mkdir /path/to/desired/MCP/directory
+cd /path/to/desired/MCP/directory
+git clone https://github.com/gregbur000/netbox-rw.git
+```
+
+### 2. Create a virtual environment and install dependencies
+
+```bash
 python3 -m venv .
+source bin/activate
 pip install mcp httpx
 ```
 
